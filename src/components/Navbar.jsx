@@ -1,5 +1,6 @@
 import React from "react";
 import NeatSkillsLogo from "../assets/neatskillslogosample.svg";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -32,22 +33,22 @@ function Navbar() {
           </a>
         </ul>
         <div className="flex items-center gap-[2rem]">
-          <a href="/beta/signup">
+          <NavLink to="/beta/signup">
             <button
               type="button"
               className="bg-pink-600 uppercase border border-[#ffffff] rounded-lg w-[77px] h-7 md:text-sm md:w-24 md:h-11 lg:text-xl lg:w-32 lg:h-14 hover:scale-[1.15] transition-transform duration-300"
             >
               Sign up
             </button>
-          </a>
-          <a href="/beta/login">
+          </NavLink>
+          <NavLink to="/beta/login">
             <button
               type="button"
               className="uppercase border border-[#ffffff] rounded-lg w-[77px] h-7 md:text-sm md:w-24 md:h-11 lg:text-xl lg:w-32 lg:h-14 hover:scale-[1.15] transition-transform duration-300"
             >
               LOGIN
             </button>
-          </a>
+          </NavLink>
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import IdeasImg from "../../assets/ideas.svg";
 import RightArrow from "../../assets/rightarrow.webp";
+import { NavLink } from "react-router-dom";
 
 function GreatAim() {
   return (
@@ -10,11 +11,11 @@ function GreatAim() {
           <h1 className="font-semibold text-4xl">
             The great aim of education is not knowledge, but action.
           </h1>
-          <div>
+          <NavLink to={"/beta/signup"}>
             <button className="uppercase border border-[#ffffff] bg-black py-5 px-12 flex items-center gap-3 hover:scale-[1.05] duration-150">
               Sign Up <img src={RightArrow} alt="" className="inline-block" />
             </button>
-          </div>
+          </NavLink>
         </div>
         <div className="flex justify-center items-center">
           <img src={IdeasImg} alt="ideas" />

@@ -1,6 +1,7 @@
 import React from "react";
 import SkillDevelopmentImg from "../../assets/skilldevelopment.webp";
 import Arrow from "../../assets/arrow.svg";
+import { NavLink } from "react-router-dom";
 
 function HomeSection() {
   return (
@@ -23,22 +24,22 @@ function HomeSection() {
               Book a demo class today !!
             </p>
             <div className="btn-group flex gap-10 my-3">
-              <a href="/beta/login">
+              <NavLink to="/beta/login">
                 <button
                   type="button"
                   className=" hover:bg-pink-600 border-[3px] border-[#ffffff] w-[77px] h-7 md:text-sm md:w-48 md:h-11 lg:text-xl lg:w-auto px-5 py-5 lg:h-auto hover:scale-[1.05] transition-transform duration-300"
                 >
                   Start Learning
                 </button>
-              </a>
-              <a href="/beta/login">
+              </NavLink>
+              <NavLink to="/beta/login">
                 <button
                   type="button"
                   className=" bg-pink-600 border-[3px] border-[#ffffff] w-[77px] h-7 md:text-sm md:w-48 md:h-11 lg:text-xl lg:w-auto px-5 py-5 lg:h-auto hover:scale-[1.05] transition-transform duration-300"
                 >
                   Watch Demo Session
                 </button>
-              </a>
+              </NavLink>
             </div>
           </div>
           <div className="images">
