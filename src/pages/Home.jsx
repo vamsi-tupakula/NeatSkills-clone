@@ -4,6 +4,11 @@ import HomeSection from "./Sections/HomeSection";
 import CourseSection from "./Sections/CourseSection";
 import WhyNeat from "./Sections/WhyNeat";
 import MentorSection from "./Sections/MentorSection";
+import JoinNeat from "./Sections/JoinNeat";
+import ShockYou from "./Sections/ShockYou";
+import Certificate from "./Sections/Certificate";
+import GreatAim from "./Sections/GreatAim";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -19,8 +24,16 @@ function Home() {
       <WhyNeat />
       {/* MentorSection */}
       <MentorSection />
-      <section className="w-full min-h-[1000px] h-[100vh] bg-[#15161B]"></section>
-      <section className="w-full min-h-[1000px] h-[100vh] bg-[#0D0E14]"></section>
+      {/* JoinNeat Section*/}
+      <JoinNeat />
+      {/* ShockYou Section */}
+      <ShockYou />
+      {/* Certificate Section */}
+      <Certificate />
+      {/* GreatAim Section */}
+      <GreatAim />
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
