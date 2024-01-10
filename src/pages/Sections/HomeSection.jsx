@@ -49,7 +49,7 @@ function HomeSection() {
               height="1000"
               decoding="async"
               data-nimg="1"
-              class="lg:mr-[6%]"
+              className="lg:mr-[6%]"
               style={{ color: "transparent" }}
               src={SkillDevelopmentImg}
             />
