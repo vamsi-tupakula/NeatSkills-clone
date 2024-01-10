@@ -1,0 +1,7 @@
+.gradientPinkToRed {
+    background: linear-gradient(112.85deg,#e1348b -1.25%,rgba(243,65,78,.95) 99.07%);
+}
+
+.gradientWhiteToBlack {
+    background: linear-gradient(103.67deg,hsla(0,0%,100%,.7),hsla(0,0%,100%,.2));
+}
