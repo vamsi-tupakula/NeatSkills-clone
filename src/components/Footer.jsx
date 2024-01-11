@@ -44,7 +44,7 @@ function Footer() {
             </ul>
           </div>
         </div>
-        <div className="links col-span-2 flex flex-col pl-[10%] gap-5">
+        <div className="links col-span-2 flex flex-col justify-end pl-[10%] gap-5">
           <h1 className="text-2xl font-bold">Follow Us</h1>
           <ul className="social flex gap-10 text-4xl">
             <li>

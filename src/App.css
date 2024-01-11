@@ -5,3 +5,7 @@
 .gradientWhiteToBlack {
     background: linear-gradient(103.67deg,hsla(0,0%,100%,.7),hsla(0,0%,100%,.2));
 }
+
+.gradientPinkToViolet {
+    background: linear-gradient(to right, rgb(219, 73, 97), rgb(254, 120, 254));
+}
