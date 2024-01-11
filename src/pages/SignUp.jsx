@@ -15,25 +15,14 @@ function SignUp() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    let timerId = null;
     onAuthStateChanged(auth, (user_) => {
       if (user_) {
-        localStorage.setItem("email", user_.email);
         navigate("/beta/dashboard");
       } else {
-        localStorage.removeItem("email");
-        timerId = setTimeout(() => {
-          setLoading(false);
-        }, 100);
+        setLoading(false);
       }
     });
-
-    return () => {
-      if (!timerId) {
-        clearTimeout(timerId);
-      }
-    };
-  }, [navigate]);
+  }, []);
 
   const handleGoogleSignIn = async () => {
     const token_ = await googleSignIn();
