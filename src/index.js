@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
+import Auth from "./pages/Auth";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,9 +16,11 @@ root.render(
     <Routes>
       <Route path="/" element={<App />}>
         <Route index element={<Home />} />
-        <Route path="/beta/signup" element={<SignUp />} />
-        <Route path="/beta/login" element={<Login />} />
-        <Route path="/beta/dashboard" element={<Dashboard />} />
+        <Route path="beta" element={<Auth />}>
+          <Route path="signup" element={<SignUp />} />
+          <Route path="login" element={<Login />} />
+          <Route path="dashboard" element={<Dashboard />} />
+        </Route>
       </Route>
     </Routes>
   </BrowserRouter>

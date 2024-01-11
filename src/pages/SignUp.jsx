@@ -3,7 +3,10 @@ import WorkingImg from "../assets/working.svg";
 import NeatSkillsLogo from "../assets/neatskillslogosample.svg";
 import { NavLink, useNavigate } from "react-router-dom";
 import { auth, googleSignIn } from "../firebase/firebase";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import {
+  createUserWithEmailAndPassword,
+  onAuthStateChanged,
+} from "firebase/auth";
 
 function SignUp() {
   const navigate = useNavigate();
@@ -12,17 +15,29 @@ function SignUp() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (localStorage.getItem("token")) {
-      navigate("/beta/dashboard");
-    } else {
-      setLoading(false);
-    }
+    let timerId = null;
+    onAuthStateChanged(auth, (user_) => {
+      if (user_) {
+        localStorage.setItem("email", user_.email);
+        navigate("/beta/dashboard");
+      } else {
+        localStorage.removeItem("email");
+        timerId = setTimeout(() => {
+          setLoading(false);
+        }, 100);
+      }
+    });
+
+    return () => {
+      if (!timerId) {
+        clearTimeout(timerId);
+      }
+    };
   }, [navigate]);
 
   const handleGoogleSignIn = async () => {
     const token_ = await googleSignIn();
     if (token_) {
-      localStorage.setItem("token", token_);
       navigate("/beta/dashboard");
     } else {
       setLoading(false);
