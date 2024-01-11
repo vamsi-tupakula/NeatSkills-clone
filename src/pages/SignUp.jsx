@@ -22,7 +22,7 @@ function SignUp() {
         setLoading(false);
       }
     });
-  }, []);
+  }, [navigate]);
 
   const handleGoogleSignIn = async () => {
     const token_ = await googleSignIn();
@@ -68,7 +68,7 @@ function SignUp() {
           <div className="w-[450px] h-[431px] bg-violet-700 z-[0] rounded-[50%] filter blur-[200px]"></div>
         </div>
       </div>
-      <div className="right__form m-auto md:mt-auto  md:w-[35vw] py-[2rem]">
+      <div className="right__form m-auto md:mt-auto w-[90vw] xl:w-[35vw] py-[2rem]">
         <div className="rounded-[25px] py-8 w-full bg-[#15161B] md:bg-[#ffffff05] px-[3rem]  space-y-2 ">
           <h1 className="md:mt-[30px] md:text-2xl">Get started for free</h1>
           <p className="text-white text-xl pb-5 ">

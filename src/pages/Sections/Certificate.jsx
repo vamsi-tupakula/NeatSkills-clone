@@ -5,7 +5,7 @@ import ArrowDown from "../../assets/arrow2.webp";
 function Certificate() {
   return (
     <section className="w-full min-h-[1000px] h-[100vh] bg-[#15161B] grid justify-center items-center font-sans relative">
-      <div className="w-[1440px] grid grid-cols-2 p-5">
+      <div className="w-[100%] max-w-[1440px] grid xl:grid-cols-2 p-5 gap-[6rem]">
         <div className="left flex flex-col gap-5">
           <h1 className="font-bold text-4xl">
             Stand out with a skill <br />

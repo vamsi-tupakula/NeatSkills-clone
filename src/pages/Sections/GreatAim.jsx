@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 function GreatAim() {
   return (
     <section className="w-full min-h-[1000px] h-[100vh] bg-[#0D0E14] grid justify-center items-center font-sans">
-      <div className="w-[1260px] h-[500px] bg-pink-600 translate-x-3 rounded-xl grid grid-cols-2 py-[2rem] px-[3rem] justify-center">
+      <div className="w-[90%] max-w-[1260px] h-auto min-h-[500px] bg-pink-600 translate-x-3 rounded-xl grid xl:grid-cols-2 py-[2rem] px-[3rem] justify-center mx-auto">
         <div className="flex flex-col justify-center gap-5">
           <h1 className="font-semibold text-4xl">
             The great aim of education is not knowledge, but action.

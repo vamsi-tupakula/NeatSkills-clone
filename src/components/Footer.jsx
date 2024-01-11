@@ -3,9 +3,9 @@ import NeatSkillsLogo from "../assets/neatskillslogosample.svg";
 
 function Footer() {
   return (
-    <section className="w-full h-[350px] bg-[#000000] grid justify-center items-center font-sans py-5">
-      <div className="grid grid-cols-5 w-[1260px] h-full">
-        <div className="logo">
+    <section className="w-full min-h-[350px] bg-[#000000] grid justify-center items-center font-sans py-5">
+      <div className="grid grid-cols-1 xl:grid-cols-5 w-[1260px] h-full justify-center">
+        <div className="logo flex justify-center">
           <img src={NeatSkillsLogo} alt="" />
         </div>
         <div className="info col-span-2 flex justify-center items-center gap-10">
@@ -44,7 +44,7 @@ function Footer() {
             </ul>
           </div>
         </div>
-        <div className="links col-span-2 flex flex-col justify-end pl-[10%] gap-5">
+        <div className="links col-span-2 flex flex-col pl-[10%] gap-5">
           <h1 className="text-2xl font-bold">Follow Us</h1>
           <ul className="social flex gap-10 text-4xl">
             <li>

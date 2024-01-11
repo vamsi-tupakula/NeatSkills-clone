@@ -11,12 +11,12 @@ function JoinNeat() {
           <img
             src={LeftBlob}
             alt="left blob"
-            className="translate-x-[-10rem]"
+            className="translate-x-[-10rem] hidden 2xl:block"
           />
-          <div className="left">
+          <div className="left col-span-2 2xl:col-span-1">
             <img src={StudyGirl} alt="study girl" />
           </div>
-          <div className="right">
+          <div className="right col-span-2 2xl:col-span-1">
             <h1 className="font-bold text-3xl my-5">
               image Join our Neat Skills Community
             </h1>
@@ -59,11 +59,10 @@ function JoinNeat() {
           <img
             src={RightBlob}
             alt="right blob"
-            className="translate-x-[10rem]"
+            className="translate-x-[10rem]  hidden 2xl:block"
           />
         </div>
       </section>
-      <div className="blobs"></div>
     </>
   );
 }

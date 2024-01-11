@@ -5,22 +5,24 @@ function CourseSection() {
   return (
     <>
       <section className="w-full min-h-[1000px] h-[100vh] bg-[#15161B] grid justify-center grid-rows-3 font-sans">
-        <div className="explore__div max-w-[1570px] text-center text-wrap grid grid-cols-4 items-center justify-items-center">
-          <h1 className="font-bold text-5xl">Explore our Courses</h1>
-          <p className="text-xl col-span-2">
+        <div className="explore__div max-w-[1570px] text-center text-wrap grid grid-cols-1 lg:grid-cols-4 items-center justify-center">
+          <h1 className="font-bold text-2xl lg:text-5xl">
+            Explore our Courses
+          </h1>
+          <p className="text-lg lg:text-xl col-span-2">
             You don't need to have any prior knowledge to take our classes. You
             just need curiosity and the desire to learn.
           </p>
           <a href="/beta/login">
             <button
               type="button"
-              className="border-[3px] border-[#ffffff] w-[77px] h-7 md:text-sm md:w-48 md:h-11 lg:text-xl lg:w-auto px-5 py-5 lg:h-auto hover:scale-[1.05] transition-transform duration-300"
+              className="border-[3px] border-[#ffffff] text-sm lg:text-lg p-3 lg:p-5 lg:h-auto hover:scale-[1.05] transition-transform duration-300"
             >
               Explore Courses
             </button>
           </a>
         </div>
-        <div className="cards grid grid-cols-3">
+        <div className="cards grid grid-cols-2 items-center xl:grid-cols-3 px-3">
           <div class="shrink-0 rounded-2xl border-2  border-white shadow-lg bg-[#141518] py-[10px] px-[12px] h-[230px] md:h-[17rem] w-[250px] md:w-[355px]  md:p-5 flex flex-col  ">
             <div class="flex justify-between ">
               <img
